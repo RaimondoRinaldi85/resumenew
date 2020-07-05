@@ -45,11 +45,15 @@ body {
 .nome span{
   color: #e84222;
 }
+
 .caption h3{
   font-size: 1.5rem;
   text-shadow: .1rem .1rem .5rem black;
   text-transform: uppercase;
   padding-bottom: 1.6rem;
+}
+.caption h3 span{
+  color: #e84222;
 }
 
 .btn-lg{
