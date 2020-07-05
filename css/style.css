@@ -9,7 +9,7 @@ body {
 }
 
 .navbar{
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(82, 45, 2, 0.6);
 }
 
 .navbar-brand img{
@@ -46,7 +46,7 @@ body {
   color: #e84222;
 }
 .caption h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow: .1rem .1rem .5rem black;
   text-transform: uppercase;
   padding-bottom: 1.6rem;
