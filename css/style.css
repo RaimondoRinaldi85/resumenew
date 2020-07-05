@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat' sans-serif;
+  color: #505962;
+
+}
+
+.navbar{
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand img{
+  height: 2rem;
+}
+
+.cerchio{
+  width: 20%;
+}
+.video-background{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.caption{
+  position: absolute;
+  top: 18%;
+  width: 100%;
+  color: white;
+}
+
+.caption h1{
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .8rem black;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.nome span{
+  color: #e84222;
+}
+.caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  text-transform: uppercase;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg{
+  border-width: medium;
+  font-size: 1.1rem;
+  padding-bottom: 6rem 1.3rem;
+  margin: 1rem;
+}
+/*============= END LANDING SECTION =============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+-Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media (max-width: 768px){
+
+  
+  .caption h1{
+    font-size: 1.4rem;
+  
+    letter-spacing: .15rem;
+
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+  }
+  .cerchio{
+    width: 50%;
+  }
+  .caption h3{
+    font-size: 1.1rem;
+
+    text-transform: uppercase;
+    padding-bottom: 1.2rem;
+  }
+  
+  .btn-lg{
+    border-width: medium;
+    font-size: 1rem;
+    padding-bottom: .5rem 1rem;
+    margin: 1rem;
+  }
+}
