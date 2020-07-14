@@ -1,31 +1,28 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 *{
   scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
 }
 
 
 body {
-  color: rgb(255, 255, 255);
-  background-color: #1c1c24;
+  color: #d1d1d1;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Montserrat' sans-serif;
+ 
 }
 
 :root {
   font-size: 16px;
-  font-family: 'Montserrat' sans-serif;
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-  --raimo-orange: #e84222;
+  --bg-ombra: #141418;
+  --raimo-orange:#E87722; /*#e84222*/
+  --shadow: .1rem .1rem .5rem #141418;
+  --nero-conan: #242623;
   --transition-speed: 600ms;
 }
-
 
 
 body::-webkit-scrollbar {
@@ -40,7 +37,16 @@ body::-webkit-scrollbar-thumb {
   background: var(--raimo-orange);
 }
 
+.jumbotron{
+  margin: 3.5rem auto !important;
+  letter-spacing: .5rem;
+}
+
 main {
+  background-color:var(--nero-conan);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-left: 5rem;
   padding: 2rem;
 }
@@ -49,8 +55,8 @@ main {
 
 
 .navbar1 {
+  box-shadow: var(--shadow);
   position: fixed;
-  background-color: var(--bg-primary);
   transition: width 600ms ease;
   overflow: hidden;
   padding-left: 0 !important;
@@ -82,7 +88,7 @@ main {
   display: flex;
   align-items: center;
   height: 5rem;
-  color: var(--text-primary);
+  color: #b6b6b6;
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
@@ -91,8 +97,8 @@ main {
 
 .nav-link:hover {
   filter: grayscale(0%) opacity(1);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
+  background: var(--bg-ombra);
+  color: #ececec;
 
 }
 
@@ -113,7 +119,7 @@ main {
 }
 
 .fa-secondary {
-  color: #e84222;
+  color: var(--raimo-orange);
 }
 
 .fa-primary,
@@ -126,8 +132,8 @@ main {
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--text-secondary);
-  background: var(--bg-secondary);
+  color: #ececec;
+  background: var(--bg-ombra);
   font-size: 1.5rem;
   letter-spacing: 0.3ch;
   width: 100%;
@@ -215,7 +221,6 @@ main {
 }
 .video-background{
   position: relative;
-  
   width: 100%;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
@@ -240,30 +245,30 @@ main {
 }
 
 .fa-secondary {
-  color: #e84222;
+  color: var(--raimo-orange);
 }
 
 .caption h1{
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: .2rem;
-  text-shadow: .1rem .1rem .8rem black;
+  text-shadow: var(--shadow);
   text-transform: uppercase;
   padding-bottom: 0.5rem;
 }
 
 .nome span{
-  color: #e84222;
+  color: #ffffff;
 }
 
 .caption h3{
   font-size: 1.5rem;
-  text-shadow: .1rem .1rem .5rem black;
+  text-shadow: var(--shadow);
   text-transform: uppercase;
   padding-bottom: 1.6rem;
 }
 .caption h3 span{
-  color: #e84222;
+  color: var(--raimo-orange);
 }
 
 
@@ -278,6 +283,12 @@ main {
 
 h1{
   color: var(--raimo-orange);
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 1.3rem;
+  line-height: 25px;
 }
 
 

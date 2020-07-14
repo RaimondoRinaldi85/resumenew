@@ -18,7 +18,7 @@ TypeWriter.prototype.type = function () {
     }
 
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-    let typeSpeed = 300;
+    let typeSpeed = 250;
     if (this.idDeleting) {
         typeSpeed /= 2;
     }
@@ -29,7 +29,7 @@ TypeWriter.prototype.type = function () {
     } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.wordIndex++;
-        typeSpeed = 400;
+        typeSpeed = 350;
     }
 
     setTimeout(() => this.type(), typeSpeed)
