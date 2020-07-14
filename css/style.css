@@ -37,19 +37,7 @@ body::-webkit-scrollbar-thumb {
   background: var(--raimo-orange);
 }
 
-.jumbotron{
-  margin: 3.5rem auto !important;
-  letter-spacing: .5rem;
-}
 
-main {
-  background-color:var(--nero-conan);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 5rem;
-  padding: 2rem;
-}
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* nav */
 
@@ -273,6 +261,21 @@ main {
 
 
 /*============= END LANDING SECTION =============*/
+
+.jumbotron{
+  margin: 3.5rem auto !important;
+  letter-spacing: .5rem;
+  box-shadow: var(--shadow);
+}
+
+main {
+  background-color:var(--nero-conan);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 5rem;
+  padding: 2rem;
+}
 
 .btn-lg{
   border-width: medium;
