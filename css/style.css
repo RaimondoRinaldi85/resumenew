@@ -1,9 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+*{
+  scroll-behavior: smooth;
+}
+
+
 body {
-  color: black;
-  background-color: white;
+  color: rgb(255, 255, 255);
+  background-color: #1c1c24;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -12,7 +17,7 @@ body {
 
 :root {
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: 'Montserrat' sans-serif;
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -32,35 +37,31 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #e8432260;
+  background: var(--raimo-orange);
 }
 
 main {
   margin-left: 5rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* nav */
 
-.nav{
-  margin: 0 !important;
-  padding: 0 !important;
-}
 
-.navbar {
+.navbar1 {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
   overflow: hidden;
-  padding: 0 !important;
-  margin: 0 !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
   z-index: 1000;
 }
 
 .navbar-nav {
-  list-style: none;
-  padding: 0 !important;
   margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,6 +70,7 @@ main {
 
 .nav-item {
   width: 100%;
+
 }
 
 .nav-item:last-child {
@@ -76,6 +78,7 @@ main {
 }
 
 .nav-link {
+
   display: flex;
   align-items: center;
   height: 5rem;
@@ -90,6 +93,7 @@ main {
   filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
   color: var(--text-secondary);
+
 }
 
 .link-text {
@@ -132,23 +136,23 @@ main {
 .logo svg {
   transform: rotate(0deg);
   transition: var(--transition-speed);
+  
 }
 
-.logo-text
-{
+.logo-text{
   display: inline;
   position: absolute;
   left: -999px;
   transition: var(--transition-speed);
 }
 
-.navbar:hover .logo svg {
+.navbar1:hover .logo svg {
   transform: rotate(-180deg);
 }
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-  .navbar {
+  .navbar1 {
     bottom: 0;
     width: 100vw;
     height: 5rem;
@@ -174,26 +178,26 @@ main {
 
 /* Large screens */
 @media only screen and (min-width: 600px) {
-  .navbar {
+  .navbar1 {
     top: 0;
     width: 5rem;
     height: 100vh;
   }
 
-  .navbar:hover {
+  .navbar1:hover {
     width: 16rem;
   }
 
-  .navbar:hover .link-text {
+  .navbar1:hover .link-text {
     display: inline;
   }
 
-  .navbar:hover .logo svg
+  .navbar1:hover .logo svg
   {
     margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text
+  .navbar1:hover .logo-text
   {
     left: 0px;
   }
@@ -203,9 +207,9 @@ main {
 /* end nav */
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
-.caption{
-  margin-left: 0 !important;
-}
+
+
+
 .cerchio{
   width: 20%;
 }
@@ -224,13 +228,28 @@ main {
   color: white;
 }
 
+.caption svg {
+  width: 2.5rem;
+  min-width: 2rem;
+  margin-top: 3rem;
+  transform: rotate(90deg)
+}
+
+.fa-primary {
+  color: #ffffff;
+}
+
+.fa-secondary {
+  color: #e84222;
+}
+
 .caption h1{
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: .2rem;
   text-shadow: .1rem .1rem .8rem black;
   text-transform: uppercase;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .nome span{
@@ -247,15 +266,19 @@ main {
   color: #e84222;
 }
 
+
+/*============= END LANDING SECTION =============*/
+
 .btn-lg{
   border-width: medium;
   font-size: 1.1rem;
   padding-bottom: 6rem 1.3rem;
   margin: 1rem;
 }
-/*============= END LANDING SECTION =============*/
 
-
+h1{
+  color: var(--raimo-orange);
+}
 
 
 
