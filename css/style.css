@@ -19,7 +19,7 @@ body {
   font-size: 16px;
   --bg-ombra: #141418;
   --raimo-orange:#E87722; /*#e84222*/
-  --shadow: .1rem .1rem .5rem #141418;
+  --shadow: .1rem .1rem 1rem #242623;
   --nero-conan: #242623;
   --transition-speed: 600ms;
 }
@@ -64,7 +64,6 @@ body::-webkit-scrollbar-thumb {
 
 .nav-item {
   width: 100%;
-
 }
 
 .nav-item:last-child {
@@ -269,7 +268,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
-  background-color:var(--nero-conan);
+  /* background-color:var(--nero-conan);    /* bg */ 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,6 +293,9 @@ p{
   line-height: 25px;
 }
 
+.card{
+  box-shadow: var(--shadow);
+}
 
 
 
